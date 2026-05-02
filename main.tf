@@ -31,7 +31,7 @@ resource "aws_internet_gateway" "maha_igw" {
 }
 
 resource "aws_route_table" "maha_route_table" {
-  vpc_id = aws_vpc.mahak_vpc.id
+  vpc_id = aws_vpc.maha_vpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
