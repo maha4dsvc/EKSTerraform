@@ -49,7 +49,7 @@ resource "aws_route_table_association" "a" {
   route_table_id = aws_route_table.maha_route_table.id
 }
 
-resource "aws_security_group" "mahacluster_sg" {
+resource "aws_security_group" "maha_cluster_sg" {
   vpc_id = aws_vpc.maha_vpc.id
 
   egress {
